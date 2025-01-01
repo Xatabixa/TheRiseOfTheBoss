@@ -1,0 +1,55 @@
+add_namespace = boss
+
+country_event = {
+	id = boss.1
+	title = boss.1.t
+	desc = boss.1.d
+	picture = GFX_event_boss.1
+	is_triggered_only = yes
+	option = {
+		name = boss.1.a
+		ai_chance = {
+			factor = 50
+		}
+		PYA = {
+
+		}
+	}
+	option = {
+		name = boss.1.b
+		ai_chance = {
+			factor = 50
+		}
+		PYA = {
+
+		}
+	}
+}
+
+country_event = {
+	id = boss.2
+	title = boss.2.t
+	desc = boss.2.d
+	picture = GFX_event_boss.2
+	is_triggered_only = yes
+	option = {
+		name = boss.2.a
+		ai_chance = {
+			factor = 50
+		}
+		PYA = {
+			
+		}
+	}
+	option = {
+		name = boss.2.b
+		ai_chance = {
+			factor = 50
+		}
+		PYA = {
+			add_ideas = {
+				PYA_42bratuxa_goda_idea
+			}
+		}
+	}
+}

@@ -1,0 +1,181 @@
+focus_tree = {
+    id = PYA_focus
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = PYA
+        }
+    }
+    default = no
+
+    focus = {
+        id = PYA_razvilka
+        icon = GFX_goal_PYA_razvilka
+        cost = 10
+        x = 6
+        y = 0
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = PYA_42_party
+        icon = GFX_goal_PYA_42_party
+        x = 3
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = PYA_razvilka
+        }
+        mutually_exclusive = {
+            focus = PYA_mc_maks
+        }
+        completion_reward = {
+
+        }
+    }
+    
+    focus = {
+        id = PYA_nax
+        icon = GFX_goal_PYA_nax
+        cost = 5
+        x = 3
+        y = 2
+        prerequisite = {
+            focus = PYA_42_party
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = PYA_f5lay
+        icon = GFX_goal_PYA_f5lay
+        cost = 5
+        x = 1
+        y = 2
+        prerequisite = {
+            focus = PYA_42_party
+        }
+        completion_reward = {
+            country_event = PYA_f5lay_event
+        }
+    }
+
+    focus = {
+        id = PYA_42bratuxa_goda
+        icon = GFX_goal_PYA_42bratuxa_goda
+        cost = 5
+        x = 2
+        y = 3
+        prerequisite = {
+            focus = PYA_f5lay
+        }
+        prerequisite = {
+            focus = PYA_nax
+        }
+        completion_reward = {
+            country_event = PYA_42bratuxa_goda_event
+        }
+    }
+    
+    focus = {
+        id = PYA_nabor_v_otso
+        icon = GFX_goal_PYA_nabor_na_sp
+        cost = 5
+        x = 1
+        y = 4
+        prerequisite = {
+            focus = PYA_42bratuxa_goda
+        }
+        completion_reward = {
+            add_ideas = {
+                PYA_nabor_v_otso_idea
+            }
+        }
+    }
+
+    focus = {
+        id = PYA_mc_maks
+        icon = GFX_goal_PYA_mc_maks
+        x = 9
+        y = 1
+        cost = 5
+        prerequisite = {
+            focus = PYA_razvilka
+        }
+        mutually_exclusive = {
+            focus = PYA_42_party
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
+        id = PYA_sp_army
+        icon = GFX_goal_PYA_sp_army
+        cost = 10
+        x = 15
+        y = 1
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = PYA_mc_maks_doctrine
+        icon = GFX_goal_PYA_mc_maks_doctrine
+        cost = 5
+        x = 13
+        y = 2
+        prerequisite = {
+            focus = PYA_mc_maks
+        }
+        prerequisite = {
+            focus = PYA_sp_army
+        }
+        mutually_exclusive = {
+            focus = PYA_42_party_idea
+        }
+        completion_reward = {
+            add_ideas = {
+                PYA_mc_maks_doctrine_idea
+            }
+        }
+    }
+
+    focus = {
+        id = PYA_42_party_idea
+        icon = GFX_goal_PYA_42_party_idea
+        cost = 5
+        x = 17
+        y = 2
+        prerequisite = {
+            focus = PYA_sp_army
+        }
+        mutually_exclusive = {
+            focus = PYA_mc_maks_doctrine
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = PYA_fugaboty
+        icon = GFX_goal_PYA_fugaboty
+        cost = 5
+        x = 16
+        y = 3
+        prerequisite = {
+            focus = PYA_42_party_idea
+        }
+        completion_reward = { }
+    }
+}

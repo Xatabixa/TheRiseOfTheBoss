@@ -91,7 +91,7 @@ focus_tree = {
         x = 1
         y = 4
         prerequisite = {
-            focus = PYA_42bratuxa_goda
+            focus = PYA_f5lay
         }
         completion_reward = {
             add_ideas = {

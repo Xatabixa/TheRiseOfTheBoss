@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_dichlorid_oganeson_portrait"
+		texturefile = "gfx/leaders/PYA/PYA_dichlorid_oganeson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dichlorid_oganeson_advisor"
+		texturefile = "gfx/interface/ideas/PYA_dichlorid_oganeson_small.dds"
+	}
+}

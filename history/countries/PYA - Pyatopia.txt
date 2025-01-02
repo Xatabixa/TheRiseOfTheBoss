@@ -11,13 +11,15 @@ add_ideas = {
 	slay_2023_mem_goda
 }
 
-recruit_character = dichlorid_oganeson
-recruit_character = dichlorid_oganeson_leader
+
 
 set_autonomy = {
 	target = MPK
 	autonomous_state = autonomy_puppet
 }
+
+recruit_character = dichlorid_oganeson
+recruit_character = dichlorid_oganeson_leader
 
 # Starting tech
 set_technology = {

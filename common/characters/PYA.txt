@@ -3,7 +3,6 @@ characters = {
 		name = "Дихлорид Оганесона"
 		portraits = {
 			civilian = {
-				large = GFX_dichlorid_oganeson_portrait
 				small = GFX_dichlorid_oganeson_advisor
 			}
 		}
@@ -11,10 +10,7 @@ characters = {
 			slot = political_advisor
 			idea_token = dichlorid_oganeson
 			allowed = {
-				original_tag = PYA
-			}
-			available = {
-				has_government = hypecratia
+				always = yes
 			}
 			traits = {
 				hypecratia_booster
@@ -23,6 +19,20 @@ characters = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+		
+	}
+	dichlorid_oganeson_leader = {
+		name = "Дихлорид Оганесона"
+		portraits = {
+			civilian = {
+				large = GFX_dichlorid_oganeson_portrait
+			}
+		}
+		country_leader = {
+			ideology = 42ideology
+			expire = "2042.1.1.1"
+			id = -1
 		}
 	}
 }

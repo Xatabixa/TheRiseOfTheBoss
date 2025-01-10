@@ -10,10 +10,18 @@ characters = {
 			slot = political_advisor
 			idea_token = dichlorid_oganeson
 			allowed = {
-				always = yes
+				if = {
+					has_completed_focus = PYA_mc_maks
+
+					not = {
+						PYA = {
+							has_government = hypecratia
+						}
+					}
+				}
 			}
 			traits = {
-				hypecratia_booster
+				42bratuxa
 			}
 			cost = 100
 			ai_will_do = {
@@ -22,6 +30,7 @@ characters = {
 		}
 		
 	}
+	
 	dichlorid_oganeson_leader = {
 		name = "Дихлорид Оганесона"
 		portraits = {
@@ -33,6 +42,59 @@ characters = {
 			ideology = 42ideology
 			expire = "2042.1.1.1"
 			id = -1
+
+			traits = {
+				42bratuxa
+			}
+		}
+	}
+
+	mc_maks_advisor = {
+		name = "МС Макс"
+		portraits = {
+			civilian = {
+				small = GFX_mc_maks_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = mc_maks
+			allowed = {
+				if = {
+					has_completed_focus = PYA_42_party
+
+					not = {
+						PYA = {
+							has_government = fascism
+						}
+					}
+				}
+			}
+			traits = {
+				mс_chuma
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	mc_maks = {
+		name = "МС Макс"
+		portraits {
+			civilian = {
+				large = GFX_mc_maks
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "2042.1.1.1"
+			id = -1
+
+			traits = {
+				mс_chuma
+			}
 		}
 	}
 }

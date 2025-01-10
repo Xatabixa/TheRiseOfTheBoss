@@ -20,6 +20,8 @@ set_autonomy = {
 
 recruit_character = dichlorid_oganeson
 recruit_character = dichlorid_oganeson_leader
+recruit_character = mc_maks_advisor
+recruit_character = mc_maks
 
 # Starting tech
 set_technology = {
@@ -58,6 +60,3 @@ set_popularities = {
 	neutrality = 16
 	hypecratia = 42
 }
-
-
-#абаюдна

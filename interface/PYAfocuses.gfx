@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_goal_PYA_nax"
+		texturefile = "gfx/interface/goals/goal_PYA_nax.dds"
+	}
+
+}

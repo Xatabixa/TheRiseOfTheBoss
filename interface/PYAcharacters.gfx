@@ -9,4 +9,9 @@ spriteTypes = {
 		name = "GFX_dichlorid_oganeson_advisor"
 		texturefile = "gfx/interface/ideas/PYA_dichlorid_oganeson_small.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_mc_maks"
+		texturefile = "gfx/leaders/PYA/PYA_mc_maks_fascism.dds"
+	}
 }

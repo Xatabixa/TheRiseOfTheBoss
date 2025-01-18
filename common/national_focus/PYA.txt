@@ -90,8 +90,8 @@ focus_tree = {
     }
 
     focus = {
-        id = PYA_
-        icon = GFX_goal_PYA_
+        id = PYA_aktery_pyatorki
+        icon = GFX_goal_PYA_aktery_pyaotrki
         cost = 5
         x = 0
         y = 4
@@ -106,7 +106,7 @@ focus_tree = {
     focus = {
         id = PYA_mc_maks
         icon = GFX_goal_PYA_mc_maks
-        x = 11
+        x = 13
         y = 1
         cost = 5
         prerequisite = {
@@ -124,63 +124,39 @@ focus_tree = {
     }
 
     focus = {
-        id = PYA_sp_army
-        icon = GFX_goal_PYA_sp_army
-        cost = 10
-        x = 17
-        y = 1
-        completion_reward = {
-
-        }
-    }
-
-    focus = {
-        id = PYA_mc_maks_doctrine
-        icon = GFX_goal_PYA_mc_maks_doctrine
+        id = PYA_pozor_na_ege
+        icon = GFX_goal_PYA_pozor_na_ege
         cost = 5
-        x = 15
+        x = 12
         y = 2
         prerequisite = {
             focus = PYA_mc_maks
         }
-        prerequisite = {
-            focus = PYA_sp_army
-        }
-        mutually_exclusive = {
-            focus = PYA_42_party_idea
-        }
-        completion_reward = {
-            add_ideas = {
-                PYA_mc_maks_doctrine_idea
-            }
-        }
+        completion_reward = { }
     }
 
-    focus = {
-        id = PYA_42_party_idea
-        icon = GFX_goal_PYA_42_party_idea
-        cost = 5
-        x = 19
-        y = 2
-        prerequisite = {
-            focus = PYA_sp_army
-        }
-        mutually_exclusive = {
-            focus = PYA_mc_maks_doctrine
-        }
-        completion_reward = {
-
-        }
-    }
+    
 
     focus = {
-        id = PYA_fugaboty
-        icon = GFX_goal_PYA_fugaboty
+        id = PYA_ban_mc_maksa
+        icon = GFX_goal_PYA_ban_mc_maksa
         cost = 5
-        x = 17
+        x = 12
         y = 3
         prerequisite = {
-            focus = PYA_42_party_idea
+            focus = PYA_pozor_na_ege
+        }
+        completion_reward = { }
+    }
+
+    focus = {
+        id = PYA_fail_goda
+        icon = GFX_goal_PYA_fail_goda
+        cost = 5
+        x = 12
+        y = 4
+        prerequisite = {
+            focus = PYA_ban_mc_maksa
         }
         completion_reward = { }
     }
@@ -210,7 +186,7 @@ focus_tree = {
         icon = GFX_goal_PYA_42_deputaty
         cost = 5
         x = 4
-        y = 3
+        y = 5
         prerequisite = {
             focus = PYA_slava_bossu
             focus = PYA_42_party
@@ -225,7 +201,7 @@ focus_tree = {
         icon = GFX_goal_PYA_nabor_v_otso
         cost = 5
         x = 4
-        y = 4
+        y = 6
         prerequisite = {
             focus = PYA_42_deputaty
         }
@@ -263,6 +239,20 @@ focus_tree = {
     }
 
     focus = {
+        id = PYA_max_grow
+        icon = GFX_goal_PYA_max_grow
+        cost = 5
+        x = 6
+        y = 5
+        prerequisite = {
+            focus = PYA_bitva_onlifans
+        }
+        completion_reward = {
+            
+        }
+    }
+
+    focus = {
         id = PYA_progrev
         icon = GFX_goal_PYA_progrev
         cost = 5
@@ -273,6 +263,99 @@ focus_tree = {
         }
         completion_reward = {
 
+        }
+    }
+
+    focus = {
+        id = PYA_telega
+        icon = GFX_goal_PYA_telega
+        cost = 5
+        x = 8
+        y = 2
+        prerequisite = {
+            focus = PYA_slava_bossu
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = PYA_42_pasty
+        icon = GFX_goal_PYA_42_pasty
+        cost = 5
+        x = 8
+        y = 3
+        prerequisite = {
+            focus = PYA_telega
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = PYA_42_ataki
+        icon = GFX_goal_PYA_42_ataki
+        cost = 5
+        x = 8
+        y = 4
+        prerequisite = {
+            focus = PYA_42_pasty
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = PYA_
+        icon = GFX_goal_PYA_
+        cost = 5
+        x = 8
+        y = 5
+        prerequisite = {
+            focus = PYA_42_ataki
+        }
+        completion_reward = { }
+    }
+
+    focus = {
+        id = PYA_main_hype_of_twich
+        icon = GFX_goal_main_hype_of_twich
+        cost = 5
+        x = 7
+        y = 6
+        prerequisite = {
+            focus = PYA_max_grow
+        }
+        prerequisite = {
+            focus = PYA_
+        }
+        completion_reward = {
+
+        }
+    }
+
+    focus = {
+        id = PYA_vpered_v_budushee
+        icon = GFX_goal_vpered_v_budushee
+        cost = 2
+        x = 7
+        y = 7
+        prerequisite = {
+            focus = PYA_main_hype_of_twich
+        }
+        prerequisite = {
+            focus = PYA_nabor_v_otso
+        }
+        completion_reward = {
+            hidden_effect = {
+                if = {
+                    limit = { has_completed_focus = PYA_slava_bossu }
+                    country_event = { id = razvilka.1 }
+                }
+            }
         }
     }
 

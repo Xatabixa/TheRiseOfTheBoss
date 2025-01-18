@@ -53,3 +53,58 @@ country_event = {
 		}
 	}
 }
+
+add_namespace = razvilka
+
+country_event = {
+	id = razvilka.1
+	title = razvilka.1.t
+	desc = razvilka.1.d
+	picture = GFX_event_razvilka.1
+	is_triggered_only = yes
+	option = {
+		name = razvilka.1.a
+		ai_chance = {
+			factor = 34
+		}
+		PYA = {
+			hidden_effect = {
+				load_focus_tree = PYA_boss
+				set_country_flag = PYA_boss_vibory
+			}
+			custom_effect_tooltip = {
+				text = razvilka.1.a.tt
+			}
+		}
+	}
+	option = {
+		name = razvilka.1.b
+		ai_chance = {
+			factor = 33
+		}
+		PYA = {
+			hidden_effect = {
+				load_focus_tree = PYA_boss
+				set_country_flag = PYA_boss_dictator
+			}
+			custom_effect_tooltip = {
+				text = razvilka.1.b.tt
+			}
+		}
+	}
+	option = {
+		name = razvilka.1.c
+		ai_chance = {
+			factor = 33
+		}
+		PYA = {
+			hidden_effect = {
+				load_focus_tree = PYA_boss
+				set_country_flag = PYA_boss_korol
+			}
+			custom_effect_tooltip = {
+				text = razvilka.1.c.tt
+			}
+		}
+	}
+}
